@@ -9,7 +9,7 @@
 [![Packagist Version](https://img.shields.io/packagist/v/yaroslawww/laravel-eloquent-user-fullname.svg)](https://packagist.org/packages/yaroslawww/laravel-eloquent-user-fullname)
 
 
-Simple helper, to quickly add user "name" fields: `First Name`, `Middle Name`, `Last Name`, `Name`, `Full Name`.
+Simple helper, to quickly add user "name" fields: `First Name`, `Middle Name`, `Last Name`, **`Name`**, **`Full Name`**.
 You can quickly add a library and do not write additional tests as the library covers them. Or you can just copy Trait :)
 
 ## Installation
