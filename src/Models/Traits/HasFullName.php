@@ -18,7 +18,7 @@ trait HasFullName
 
     public function getNameAttribute()
     {
-        return StrHelper::concatIfNotEmpty([
+        return StrHelper::implodeFiltered([
             $this->{$this->getFirstNameName()},
             $this->{$this->getLastNameName()},
         ]);
@@ -26,7 +26,7 @@ trait HasFullName
 
     public function getFullNameAttribute()
     {
-        return StrHelper::concatIfNotEmpty([
+        return StrHelper::implodeFiltered([
             $this->{$this->getFirstNameName()},
             $this->{$this->getMiddleNameName()},
             $this->{$this->getLastNameName()},

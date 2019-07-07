@@ -51,6 +51,30 @@ There added stub migration file to add required fields
 php artisan vendor:publish --provider="Angecode\LaravelFullName\FullNameServiceProvider" --tag="migrations"
 ```
 
+### Helpers
+Package provide helper functions 
+``` php
+$result = StrHelper::implodeFiltered([
+    'foo',
+    null,
+    'bar',
+    ''
+]);
+
+echo $result; // "foo bar"
+
+$result = StrHelper::implodeFiltered([
+    'foo',
+    'test',
+    'bar',
+    'test',
+], '|', function ($item){
+    return $item == 'test';
+});
+
+echo $result; // "test|test"
+```
+
 ### Testing
 
 ``` bash

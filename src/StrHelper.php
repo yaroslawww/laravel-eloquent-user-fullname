@@ -4,11 +4,11 @@ namespace Angecode\LaravelFullName;
 
 class StrHelper
 {
-    public static function concatIfNotEmpty(array $items, string $glue = ' ')
+    public static function implodeFiltered(array $items, string $glue = ' ', callable $callback = null)
     {
         return implode(
             $glue,
-            array_filter($items)
+            ($callback) ? array_filter($items, $callback) : array_filter($items)
         );
     }
 }
