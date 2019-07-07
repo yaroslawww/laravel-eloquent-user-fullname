@@ -1,0 +1,53 @@
+{
+    "name": "yaroslawww/laravel-eloquent-user-fullname",
+    "description": "Simple helper, to quickly add user fields: First Name, Middle Name, Last Name, username, Name, Full Name",
+    "keywords": [
+        "php",
+        "laravel",
+        "user",
+        "fullname",
+        "laravel-eloquent-user-fullname"
+    ],
+    "homepage": "https://github.com/yaroslawww/laravel-eloquent-user-fullname",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Yaroslav Georgitsa",
+            "email": "yaroslav.georgitsa@gmail.com",
+            "homepage": "https://github.com/yaroslawww",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": "^7.2"
+    },
+    "require-dev": {
+        "larapack/dd": "^1.0",
+        "phpunit/phpunit": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Angecode\\LaravelFullName\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Angecode\\LaravelFullName\\Tests\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit",
+        "test-coverage": "vendor/bin/phpunit --coverage-html coverage"
+
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Angecode\\LaravelFullName\\FullNameServiceProvider"
+            ]
+        }
+    }
+}
