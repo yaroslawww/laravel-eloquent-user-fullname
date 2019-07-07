@@ -2,8 +2,8 @@
 
 namespace Angecode\LaravelFullName\Tests;
 
-use Angecode\LaravelFullName\StrHelper;
 use PHPUnit\Framework\TestCase;
+use Angecode\LaravelFullName\StrHelper;
 
 class StrHelperTest extends TestCase
 {
@@ -36,7 +36,5 @@ class StrHelperTest extends TestCase
 
         $this->expectException(\ArgumentCountError::class);
         StrHelper::concatIfNotEmpty();
-
     }
-
 }
