@@ -2,8 +2,8 @@
 
 namespace Angecode\LaravelFullName\Tests;
 
-use Angecode\LaravelFullName\Models\Traits\HasFullName;
 use PHPUnit\Framework\TestCase;
+use Angecode\LaravelFullName\Models\Traits\HasFullName;
 
 class FullNameTest extends TestCase
 {

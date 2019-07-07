@@ -1,11 +1,9 @@
 <?php
 
-
 namespace Angecode\LaravelFullName\Models\Traits;
 
 trait HasFullName
 {
-
     /*protected $fillable = [
         'first_name', 'middle_name', 'last_name',
     ];*/
