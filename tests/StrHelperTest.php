@@ -21,7 +21,7 @@ class StrHelperTest extends TestCase
             'foo',
             null,
             'bar',
-            ''
+            '',
         ], '');
 
         $this->assertEquals('foobar', $result);
@@ -47,14 +47,14 @@ class StrHelperTest extends TestCase
         StrHelper::implodeFiltered();
     }
 
-
     public function test_concat_filtered_with_callback()
     {
         $result = StrHelper::implodeFiltered([
             'test1',
             'test2',
             'test3',
-        ], ' ', function (){});
+        ], ' ', function () {
+        });
 
         $this->assertEquals('', $result);
 
@@ -62,7 +62,7 @@ class StrHelperTest extends TestCase
             'test1',
             'test2',
             'test3',
-        ], ' ', function (){
+        ], ' ', function () {
             return true;
         });
 
@@ -73,7 +73,7 @@ class StrHelperTest extends TestCase
             'test',
             'bar',
             'test',
-        ], '|', function ($item){
+        ], '|', function ($item) {
             return $item == 'test';
         });
 
