@@ -2,7 +2,7 @@
 
 [![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
 [![Build Status](https://travis-ci.org/yaroslawww/laravel-eloquent-user-fullname.svg?branch=master)](https://travis-ci.org/yaroslawww/laravel-eloquent-user-fullname) 
-[![StyleCI](https://github.styleci.io/repos/195463782/shield?branch=master&style=flat-square)](https://github.styleci.io/repos/195463782)
+[![StyleCI](https://github.styleci.io/repos/195641075/shield?branch=master&style=flat-square)](https://github.styleci.io/repos/195641075)
 [![Quality Score](https://img.shields.io/scrutinizer/g/yaroslawww/laravel-eloquent-user-fullname.svg?b=master)](https://scrutinizer-ci.com/g/yaroslawww/laravel-eloquent-user-fullname/?branch=master)
 [![Code Coverage](https://scrutinizer-ci.com/g/yaroslawww/laravel-eloquent-user-fullname/badges/coverage.png?b=master)](https://scrutinizer-ci.com/g/yaroslawww/laravel-eloquent-user-fullname/?branch=master)
 [![PHP Version](https://img.shields.io/travis/php-v/yaroslawww/laravel-eloquent-user-fullname.svg?style=flat-square)](https://packagist.org/packages/yaroslawww/laravel-eloquent-user-fullname)
