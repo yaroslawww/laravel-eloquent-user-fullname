@@ -8,6 +8,8 @@ use Illuminate\Filesystem\Filesystem;
 /**
  * Trait CanPublish.
  *
+ * @property $app
+ *
  * @@codeCoverageIgnore
  */
 trait CanPublish

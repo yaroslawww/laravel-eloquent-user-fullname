@@ -2,6 +2,8 @@
 
 namespace Angecode\LaravelFullName\Models\Traits;
 
+use Angecode\LaravelFullName\StrHelper;
+
 trait HasFullName
 {
     /*protected $fillable = [
@@ -16,29 +18,19 @@ trait HasFullName
 
     public function getNameAttribute()
     {
-        return implode(
-            ' ',
-            array_filter(
-                [
-                    $this->{$this->getFirstNameName()},
-                    $this->{$this->getLastNameName()},
-                ]
-            )
-        );
+        return StrHelper::concatIfNotEmpty([
+            $this->{$this->getFirstNameName()},
+            $this->{$this->getLastNameName()},
+        ]);
     }
 
     public function getFullNameAttribute()
     {
-        return implode(
-            ' ',
-            array_filter(
-                [
-                    $this->{$this->getFirstNameName()},
-                    $this->{$this->getMiddleNameName()},
-                    $this->{$this->getLastNameName()},
-                ]
-            )
-        );
+        return StrHelper::concatIfNotEmpty([
+            $this->{$this->getFirstNameName()},
+            $this->{$this->getMiddleNameName()},
+            $this->{$this->getLastNameName()},
+        ]);
     }
 
     /*
