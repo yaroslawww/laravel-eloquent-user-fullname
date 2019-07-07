@@ -2,13 +2,12 @@
 
 namespace Angecode\LaravelFullName;
 
-use Angecode\LaravelFullName\Traits\CanPublish;
 use Illuminate\Filesystem\Filesystem;
 use Illuminate\Support\ServiceProvider;
+use Angecode\LaravelFullName\Traits\CanPublish;
 
 /**
- * Class FullNameServiceProvider
- * @package Angecode\LaravelFullName
+ * Class FullNameServiceProvider.
  *
  * @@codeCoverageIgnore
  */
@@ -22,7 +21,7 @@ class FullNameServiceProvider extends ServiceProvider
     public function boot(Filesystem $filesystem)
     {
         $this->publishes([
-            __DIR__ . '/../database/migrations/add_fullname_to_users_table.php.stub' => $this->getMigrationFileName($filesystem),
+            __DIR__.'/../database/migrations/add_fullname_to_users_table.php.stub' => $this->getMigrationFileName($filesystem),
         ], 'migrations');
     }
 
